@@ -1,0 +1,16 @@
+<launch>
+    <arg name="camera" default="0"/>
+    <arg name="img_output" default="false"/>
+    <arg name="ajuste" default="false"/>
+    <arg name="brilho" default="4"/>
+    
+    <!-- Visão -->
+    <node name="vision" pkg="object_finder" exec="connecting_and_showing" output="log" > 
+        <param name="camera" value="$(var camera)" />
+        <param name="img_output" value="$(var img_output)" />
+        <param name="ajuste" value="$(var ajuste)" />
+        <param name="brilho" value="$(var brilho)" />
+
+    </node>
+
+</launch>

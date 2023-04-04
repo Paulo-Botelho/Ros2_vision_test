@@ -1,0 +1,1 @@
+call C:\opt\ros\humble\x64\local_setup.bat && C:\cros2_ws\install\setup.bat && call "D:\VisualStudio\IDE\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64 
