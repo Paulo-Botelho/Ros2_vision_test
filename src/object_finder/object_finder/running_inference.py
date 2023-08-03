@@ -14,7 +14,7 @@ class running_inference():
         '''Gets the CNN filenames, despite the PC file structure.'''
 
         #forçando o path dos arquivos
-        robocup_folder = os.path.join(os.path.expanduser('~'), "/Ros2_vision_test/src/object_finder/object_finder")
+        robocup_folder = os.path.join("/root/Ros2_vision_test/src/object_finder/object_finder") #os.path.expanduser('~'), 
 
         config_file = os.path.join(robocup_folder, "yolov4-tiny-obj.cfg")
         weights_file = os.path.join(robocup_folder, "yolov4-tiny-obj_best.weights")
